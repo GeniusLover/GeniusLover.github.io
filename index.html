@@ -327,7 +327,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/06/ubuntu安装mongodb /" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2017/09/06/ubuntu安装mongodb /" itemprop="url">ubuntu安装mongodb</a></h1>
         
 
         <div class="post-meta">
@@ -390,8 +390,7 @@
       
         
           
-            <hr>
-<h2 id="title：ubuntu安装mongodb"><a href="#title：ubuntu安装mongodb" class="headerlink" title="title：ubuntu安装mongodb"></a>title：ubuntu安装mongodb</h2><h3 id="install-mongodb"><a href="#install-mongodb" class="headerlink" title="install mongodb"></a>install mongodb</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6</div></pre></td></tr></table></figure>
+            <h3 id="install-mongodb"><a href="#install-mongodb" class="headerlink" title="install mongodb"></a>install mongodb</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6</div></pre></td></tr></table></figure>
 <ul>
 <li><p>Ubuntu 16.04</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">echo &quot;deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list</div><div class="line"></div><div class="line">sudo apt-get update</div><div class="line"></div><div class="line">sudo apt-get install -y mongodb-org</div></pre></td></tr></table></figure>
