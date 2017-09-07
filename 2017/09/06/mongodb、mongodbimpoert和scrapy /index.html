@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;) - 如何找到mongodb中的非空数组1db.document.find(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:true&amp;#125;&amp;#125;) - 错误提示：Synta">
+<meta name="description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;)">
 <meta name="keywords" content="数据库 python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mongodb、mongodbimpoert和scrapy">
 <meta property="og:url" content="http://yoursite.com/2017/09/06/mongodb、mongodbimpoert和scrapy /index.html">
 <meta property="og:site_name" content="非典型公民">
-<meta property="og:description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;) - 如何找到mongodb中的非空数组1db.document.find(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:true&amp;#125;&amp;#125;) - 错误提示：Synta">
+<meta property="og:description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-06T13:54:38.000Z">
+<meta property="og:updated_time" content="2017-09-07T16:15:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mongodb、mongodbimpoert和scrapy">
-<meta name="twitter:description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;) - 如何找到mongodb中的非空数组1db.document.find(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:true&amp;#125;&amp;#125;) - 错误提示：Synta">
+<meta name="twitter:description" content="- 如何删除Mongodb中的空数组1db.document.remove(&amp;#123;&amp;quot;title&amp;quot;:&amp;#123;$exists:false&amp;#125;&amp;#125;)">
 
 
 
@@ -396,6 +396,7 @@
 
       
         <h3 id="如何删除Mongodb中的空数组"><a href="#如何删除Mongodb中的空数组" class="headerlink" title="- 如何删除Mongodb中的空数组"></a>- 如何删除Mongodb中的空数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">db.document.remove(&#123;&quot;title&quot;:&#123;$exists:false&#125;&#125;)</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="如何找到mongodb中的非空数组"><a href="#如何找到mongodb中的非空数组" class="headerlink" title="- 如何找到mongodb中的非空数组"></a>- 如何找到mongodb中的非空数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">db.document.find(&#123;&quot;title&quot;:&#123;$exists:true&#125;&#125;)</div></pre></td></tr></table></figure>
 <h3 id="错误提示：SyntaxError-Unexpected-identifier"><a href="#错误提示：SyntaxError-Unexpected-identifier" class="headerlink" title="- 错误提示：SyntaxError: Unexpected identifier"></a>- 错误提示：SyntaxError: Unexpected identifier</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    &gt; mongoimport --db denistest --collection things --type csv --file C:/Users/Administrator/Desktop/csv_data.csv</div><div class="line"></div><div class="line">解决方案：不要在mongo操作台里输，直接在bash里输入该命令</div></pre></td></tr></table></figure>
 <h3 id="mongodb-import时提示assertion-9998-you-need-to-specify-fields"><a href="#mongodb-import时提示assertion-9998-you-need-to-specify-fields" class="headerlink" title="- mongodb import时提示assertion: 9998 you need to specify fields"></a>- mongodb import时提示assertion: 9998 you need to specify fields</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">解决方案： --fields &lt;field1[,field2]&gt;</div><div class="line"></div><div class="line">    错误：name:~ computer$ mongoimport --db users --collection contacts --type csv --file /Users/computer/Desktop/ftse100.csv</div><div class="line"></div><div class="line">    正确：mongoimport --db users --collection contacts --type csv --file /Users/computer/Desktop/ftse100.csv --fields field1, field2,field3</div></pre></td></tr></table></figure>
@@ -567,7 +568,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">28</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

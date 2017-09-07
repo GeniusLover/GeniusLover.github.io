@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[淘宝二手硬盘测试]]></title>
+    <url>%2F2017%2F09%2F07%2F%E6%B7%98%E5%AE%9D%E4%BA%8C%E6%89%8B%E7%A1%AC%E7%9B%98%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[前几天在淘宝上淘了个120g的机械硬盘，花了55大洋。拿到手当然要测试一把]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[ubuntu安装mongodb]]></title>
     <url>%2F2017%2F09%2F06%2Fubuntu%E5%AE%89%E8%A3%85mongodb%20%2F</url>
     <content type="text"><![CDATA[install mongodb1sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6 Ubuntu 16.04 12345echo &quot;deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.listsudo apt-get updatesudo apt-get install -y mongodb-org 开启mongodb、停止、重启12345sudo service mongod startsudo service mongod stopsudo service mongod restart Uninstall MongoDB1234567sudo service mongod stopsudo apt-get purge mongodb-org*sudo rm -r /var/log/mongodbsudo rm -r /var/lib/mongodb]]></content>
@@ -109,24 +114,11 @@
     <content type="text"><![CDATA[简单的自我介绍 从事数据挖掘与数据可视化 略懂前端开发、网站开发 微信：ifootballangel 掌握或即将掌握的主要开发技能： Android原生开发 Vue.js前端开发 Node.js后台开发 Python后台开发 flask Python爬虫开发 python数据处理 兴趣爱好： 写代码 足球 写作 到过的城市： 杭州 台州 苏州 深圳 北京 哈尔滨 上海 南京（惊鸿一面）]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Docker安装指南]]></title>
-    <url>%2F2014%2F11%2F01%2FDocker%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[tags: DockerDocker 需要安装在 64 位的 x86 平台或 ARM 平台上（如树莓派），并且要求内核版本不低于 3.10。但实际上内核越新越好，过低的内核版本可能会出现部分功能无法使用，或者不稳定。 用户可以通过如下命令检查自己的内核版本详细信息： $ uname -aLinux device 4.4.0-45-generic #66~14.04.1-Ubuntu SMP Wed Oct 19 15:05:38 UTC 2016 x86_64 x86_64 x86_64 &gt;GNU/Linux 使用脚本自动安装 Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装： curl -sSL https://get.docker.com/ | sh 执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 安装在系统中。 不过，由于伟大的墙的原因，在国内使用这个脚本可能会出现某些下载出现错误的情况。国内的一些云服务商提供了这个脚本的修改版本，使其使用国内的 Docker 软件源镜像安装，这样就避免了墙的干扰。 阿里云的安装脚本 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh - DaoCloud 的安装脚本 curl -sSL https://get.daocloud.io/docker | sh]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[使用vs code编写C语言helloworld]]></title>
     <url>%2F2014%2F11%2F01%2F%E4%BD%BF%E7%94%A8vs%20code%E7%BC%96%E5%86%99C%E8%AF%AD%E8%A8%80helloworld%2F</url>
     <content type="text"><![CDATA[先安装visual studio code，安装c/c++插件 然后vs code会自动安装相应的c/c++依赖库，等到vsc的终端显示finish后，你就可以编写c语言程序了 新建helloworld.c文件 编写helloworld代码 12345678#include &lt;stdio.h&gt;int main(void)&#123; for(int i =0;i&lt;=50;i++)&#123; printf(&quot;%s&quot;, &quot;Hello World!\n&quot;);&#125; return 0;&#125; 编译程序 gcc -g -Wall helloworld.c -o helloworld 运行程序 ./helloworld]]></content>
       <tags>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[JavaScript Notes 002]]></title>
-    <url>%2F2014%2F11%2F01%2FJavaScript%20Notes%20002%2F</url>
-    <content type="text"><![CDATA[在计算机科学中, data(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是undefined（未定义）, null（空）, boolean（布尔型）, string（字符串）, symbol(符号), number（数字）, and object（对象）。var myName; 当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 undefined。当你对一个值为 undefined 的变量进行运算操作的时候，算出来的结果将会是 NaN，NaN 的意思是 “Not a Number”。当你用一个没有 定义 的变量来做字符串连接操作的时候，它会如实的输出”undefined”。 在 JavaScript 中所有的变量都是大小写敏感的。这意味着你要区别对待大写字母和小写字母。 使用 驼峰命名法 来书写一个 Javascript 变量，在 驼峰命名法 中，变量名的第一个单词的首写字母小写，后面的单词的第一个字母大写。 在 JavaScript 中，当 + 操作符与 字符串 一起使用的时候，它被称作 连接 操作符。你可以通过和其他字符串连接 来创建一个新的字符串。‘My name is Alan,’ + ‘ I concatenate.’ 你可以通过在字符串变量或字符串后面写上 .length 来获得字符串变量 字符串 值的长度。“Alan Peter”.length; // 10 []叫中括号，{}叫大括号，()叫小括号。 大多数现代编程语言，如JavaScript，不同于人类从1开始计数。它们是从0开始计数，这被称为 基于零 的索引。var firstName = “Charles” 中，你可以使用 firstName[0] 来获得第一个位置上的字符。 Code Output\’ 单引号\” 双引号\ 反斜杠符\n 换行符\r 回车符\t 制表符\b 退格符\f 换页符 使用 数组，我们可以在一个地方存储多个数据。你以左方括号[开始定义一个数组，以右方括号]结束定义，并把每个条目之间用逗号隔开，就像这样：var sandwich = [“peanut butter”, “jelly”, “bread”] .unshift() 函数用起来就像 .push() 函数一样, 但不是在数组的末尾添加元素，而是在数组的头部添加元素。 function myFunction(){console.log(“Hi World”);}myFunction(); 在 JavaScript 中， 作用域 涉及到变量的作用范围。在函数外定义的变量具有 全局 作用域。这意味着，具有全局作用域的变量可以在代码的任何地方被调用。 这些没有使用var关键字定义的变量，会被自动创建在全局作用域中，形成全局变量。当在代码其他地方无意间定义了一个变量，刚好变量名与全局变量相同，这时会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。 在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到 队列 的末尾，旧的条目会从 队列 的头部被移出。写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。 array：pop() 删除并返回数组的最后一个元素push() 向数组的末尾添加一个或更多元素，并返回新的长度。 shift() 删除并返回数组的第一个元素unshift() 向数组的开头添加一个或更多元素，并返回新的长度。 Boolean 值绝不会写作被引号包裹起来的形式。字符串 的 “true” 和 “false” 不是 布尔值，在 JavaScript 中也没有特殊含义。 全等（===）是相对于相等操作符（==）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 数据类型。 不全等运算符（!==）与全等运算符是相反的。这意味着“不全等”并返回 false 的地方，用全等运算会返回 true，反之亦然。全等运算符不会转换值的数据类型。 有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 true，逻辑与 运算符（&amp;&amp;）才会返回 true。 如果你有非常多的选项需要选择，可以使用switch语句。根据不同的参数值会匹配上不同的case分支，语句会从第一个匹配的case分支开始执行，直到碰到break就结束。 switch (val){case 1:answer = “alpha”;break;case 2:answer = “beta”;break;case 3:answer = “gamma”;break;case 4:answer = “delta”;break;} 如果switch语句中的case分支的break 语句漏掉了，后面的 case语句会一直执行直到遇到break。如果你有多个输入值和输出值一样，可以试试下面的switch语句： switch(val) {case 1:case 2:case 3:result = “1, 2, or 3”;break;case 4:result = “4 alone”;}分支1、2、3将会产生相同的输出结果。 当代码执行到return语句时，函数返回一个结果就结束运行了，return后面的语句根本不会执行。 你之前可能听说过对象 object 。对象和数组很相似，数组是通过索引来访问和修改数据，对象是通过属性来访问和修改数据的。 这是一个示例对象： var cat = {“name”: “Whiskers”,“legs”: 4,“tails”: 1,“enemies”: [“Water”, “Dogs”]};对象适合用来存储结构化数据，就和真实世界的对象一模一样，比如一只猫。 有两种方式访问对象属性，一个是点操作符(.)，一个是中括号操作符([])。 当你知道属性的名称的时候，使用点操作符。 这是一个使用点操作符读取对象属性的例子： var myObj = {prop1: “val1”,prop2: “val2”};var prop1val = myObj.prop1; // val1var prop2val = myObj.prop2; // val2 我们同样可以删除对象的属性，例如：delete ourDog.bark; 对象和字典一样，可以用来存储键/值对。如果你的数据跟对象一样，你可以用对象来查找你想要的值，而不是使用switch或if/else语句。当你知道你的输入数据在某个范围时，这种查找方式极为有效。 这是简单的反向字母表： var alpha = {1:”Z”,2:”Y”,3:”X”,4:”W”,…24:”C”,25:”B”,26:”A”};alpha[2]; // “Y”alpha[24]; // “C” var value = 2;alpha[value]; // “Y” 有时检查一个对象属性是否存在是非常有用的，我们可以用.hasOwnProperty(propname)方法来检查对象是否有该属性。如果有返回true，反之返回 false。 var myObj = {top: “hat”,bottom: “pants”};myObj.hasOwnProperty(“top”); // truemyObj.hasOwnProperty(“middle”); // false JavaScript Object Notation 简称 JSON，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 数据结构 是 字符串，数字，布尔值，字符串，和 对象 的任意组合。 这里是一个JSON对象的示例： var ourMusic = [{“artist”: “Daft Punk”,“title”: “Homework”,“release_year”: 1997,“formats”: [“CD”,“Cassette”,“LP” ],“gold”: true}];这是一个对象数组，并且对象有各种关于专辑的 详细信息。它也有一个嵌套的 formarts 的数组。附加专辑记录可以被添加到数组的最上层。 提示数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。]]></content>
-      <tags>
-        <tag>网站开发</tag>
       </tags>
   </entry>
   <entry>
@@ -138,20 +130,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[jQueryFCC]]></title>
-    <url>%2F2014%2F11%2F01%2FjQueryFCC%2F</url>
-    <content type="text"><![CDATA[123456789&lt;script&gt; $(document).ready(function() &#123; $(&quot;button&quot;).addClass(&quot;animated bounce&quot;); $(&quot;.text-primary&quot;).addClass(&quot;animated shake&quot;); $(&quot;#target3&quot;).addClass(&quot;animated fadeOut&quot;); $(&quot;button&quot;).removeClass(&quot;btn-default&quot;); &#125;); &lt;/script&gt; jQuery的.addClass()方法，就可以给元素加class了 $(“element name/.classname/#idname”) $(“#target3”)来选择id为target3的button元素。 jQuery有一个叫做.css()的方法能让你改变元素的CSS样式。$(“#target1”).css(“color”, “blue”); jQuery有一个.prop()的方法让你来调整元素的属性.$(“button”).prop(“disabled”, true); jQuery的.html()方法可以添加HTML标签和文字到元素,而元素之前的内容都会被方法的内容所替换掉。$(“h3”).html(“jQuery Playground“); jQuery 还有一个类似的方法叫.text()，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。 jQuery 有一个.remove() 的方法可以移除HTML元素 jQuery有一个appendTo()方法可以把选中的元素加到其他元素中。$(“#target4”).appendTo(“#left-well”); jQuery的clone()方法可以拷贝元素.$(“#target2”).clone().appendTo(“#right-well”); 每个HTML元素根据继承属性都有父parent元素。$(“#left-well”).parent().css(“background-color”, “blue”); 许多HTML元素都有children(子元素)，每个子元素都从父元素那里继承了一些属性。$(“#right-well”).children().css(“color”,”orange”); jQuery 用CSS选择器来选取元素，target:nth-child(n) CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。$(“.target:nth-child(3)”).addClass(“animated bounce”); 获取class为target且索引为奇数的所有元素，并给他们添加class。$(“.target:odd”).addClass(“animated shake”); 让整个body都有淡出效果(fadeOut)：$(“body”).addClass(“animated fadeOut”);]]></content>
-      <tags>
-        <tag>网站开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[心目中的大学生活]]></title>
-    <url>%2F2014%2F11%2F01%2F%E5%BF%83%E7%9B%AE%E4%B8%AD%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%2F</url>
-    <content type="text"><![CDATA[我心目中的 大学生活应该是规律的生活，热情的工作，以及有所选择的学习。]]></content>
-      <tags>
-        <tag>大学</tag>
-      </tags>
+    <title><![CDATA[Docker安装指南]]></title>
+    <url>%2F2014%2F11%2F01%2FDocker%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[tags: DockerDocker 需要安装在 64 位的 x86 平台或 ARM 平台上（如树莓派），并且要求内核版本不低于 3.10。但实际上内核越新越好，过低的内核版本可能会出现部分功能无法使用，或者不稳定。 用户可以通过如下命令检查自己的内核版本详细信息： $ uname -aLinux device 4.4.0-45-generic #66~14.04.1-Ubuntu SMP Wed Oct 19 15:05:38 UTC 2016 x86_64 x86_64 x86_64 &gt;GNU/Linux 使用脚本自动安装 Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装： curl -sSL https://get.docker.com/ | sh 执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 安装在系统中。 不过，由于伟大的墙的原因，在国内使用这个脚本可能会出现某些下载出现错误的情况。国内的一些云服务商提供了这个脚本的修改版本，使其使用国内的 Docker 软件源镜像安装，这样就避免了墙的干扰。 阿里云的安装脚本 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh - DaoCloud 的安装脚本 curl -sSL https://get.daocloud.io/docker | sh]]></content>
   </entry>
   <entry>
     <title><![CDATA[HTML,CSS and Bootstrap Notes 001]]></title>
@@ -175,6 +156,30 @@
     <content type="text"><![CDATA[大多数 Git 服务器都会选择使用 SSH 公钥来进行授权。系统中的每个用户都必须提供一个公钥用于授权，没有的话就要生成一个。生成公钥的过程在所有操作系统上都差不多。 首先先确认一下是否已经有一个公钥了。SSH 公钥默认储存在账户的主目录下的 ~/.ssh 目录。进去看看： 查看本地公钥方法(in GitBash)$ cd ~/.ssh $ ls authorized_keys2 id_dsa known_hosts config id_dsa.pub 关键是看有没有用 something 和 something.pub 来命名的一对文件，这个 something 通常就是 id_dsa 或 id_rsa。有 .pub 后缀的文件就是公钥，另一个文件则是密钥。假如没有这些文件，或者干脆连 .ssh 目录都没有，可以用 ssh-keygen 来创建。该程序在 Linux/Mac 系统上由 SSH 包提供，而在 Windows 上则包含在 MSysGit 包里： 本地创建公钥方法（in GitBash）123456789$ ssh-keygenGenerating public/private rsa key pair.Enter file in which to save the key (/Users/schacon/.ssh/id_rsa):Enter passphrase (empty for no passphrase):Enter same passphrase again:Your identification has been saved in /Users/schacon/.ssh/id_rsa.Your public key has been saved in /Users/schacon/.ssh/id_rsa.pub.The key fingerprint is:43:c5:5b:5f:b1:f1:50:43:ad:20:a6:92:6a:1f:9a:3a schacon@agadorlaptop.local 它先要求你确认保存公钥的位置（.ssh/id_rsa），然后它会让你重复一个密码两次，如果不想在使用公钥的时候输入密码，可以留空。 现在，所有做过这一步的用户都得把它们的公钥给你或者 Git 服务器的管理员（假设 SSH 服务被设定为使用公钥机制）。他们只需要复制 .pub 文件的内容然后发邮件给管理员。公钥的样子大致如下： 查看本地公钥方法（in GitBash，not in CMD）1234567$ cat ~/.ssh/id_rsa.pubssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSUGPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XAt3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/EnmZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbxNrRFi9wrf+M7Q== schacon@agadorlaptop.local 关于在多个操作系统上设立相同 SSH 公钥的教程，可以查阅 GitHub 上有关 SSH 公钥的向导：http://github.com/guides/providing-your-ssh-key]]></content>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[心目中的大学生活]]></title>
+    <url>%2F2014%2F11%2F01%2F%E5%BF%83%E7%9B%AE%E4%B8%AD%E7%9A%84%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B4%BB%2F</url>
+    <content type="text"><![CDATA[我心目中的 大学生活应该是规律的生活，热情的工作，以及有所选择的学习。]]></content>
+      <tags>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jQueryFCC]]></title>
+    <url>%2F2014%2F11%2F01%2FjQueryFCC%2F</url>
+    <content type="text"><![CDATA[123456789&lt;script&gt; $(document).ready(function() &#123; $(&quot;button&quot;).addClass(&quot;animated bounce&quot;); $(&quot;.text-primary&quot;).addClass(&quot;animated shake&quot;); $(&quot;#target3&quot;).addClass(&quot;animated fadeOut&quot;); $(&quot;button&quot;).removeClass(&quot;btn-default&quot;); &#125;); &lt;/script&gt; jQuery的.addClass()方法，就可以给元素加class了 $(“element name/.classname/#idname”) $(“#target3”)来选择id为target3的button元素。 jQuery有一个叫做.css()的方法能让你改变元素的CSS样式。$(“#target1”).css(“color”, “blue”); jQuery有一个.prop()的方法让你来调整元素的属性.$(“button”).prop(“disabled”, true); jQuery的.html()方法可以添加HTML标签和文字到元素,而元素之前的内容都会被方法的内容所替换掉。$(“h3”).html(“jQuery Playground“); jQuery 还有一个类似的方法叫.text()，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。 jQuery 有一个.remove() 的方法可以移除HTML元素 jQuery有一个appendTo()方法可以把选中的元素加到其他元素中。$(“#target4”).appendTo(“#left-well”); jQuery的clone()方法可以拷贝元素.$(“#target2”).clone().appendTo(“#right-well”); 每个HTML元素根据继承属性都有父parent元素。$(“#left-well”).parent().css(“background-color”, “blue”); 许多HTML元素都有children(子元素)，每个子元素都从父元素那里继承了一些属性。$(“#right-well”).children().css(“color”,”orange”); jQuery 用CSS选择器来选取元素，target:nth-child(n) CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。$(“.target:nth-child(3)”).addClass(“animated bounce”); 获取class为target且索引为奇数的所有元素，并给他们添加class。$(“.target:odd”).addClass(“animated shake”); 让整个body都有淡出效果(fadeOut)：$(“body”).addClass(“animated fadeOut”);]]></content>
+      <tags>
+        <tag>网站开发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript Notes 002]]></title>
+    <url>%2F2014%2F11%2F01%2FJavaScript%20Notes%20002%2F</url>
+    <content type="text"><![CDATA[在计算机科学中, data(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是undefined（未定义）, null（空）, boolean（布尔型）, string（字符串）, symbol(符号), number（数字）, and object（对象）。 var myName; 当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 undefined。当你对一个值为 undefined 的变量进行运算操作的时候，算出来的结果将会是 NaN，NaN 的意思是 “Not a Number”。当你用一个没有 定义 的变量来做字符串连接操作的时候，它会如实的输出”undefined”。 在 JavaScript 中所有的变量都是大小写敏感的。这意味着你要区别对待大写字母和小写字母。 使用 驼峰命名法 来书写一个 Javascript 变量，在 驼峰命名法 中，变量名的第一个单词的首写字母小写，后面的单词的第一个字母大写。 在 JavaScript 中，当 + 操作符与 字符串 一起使用的时候，它被称作 连接 操作符。你可以通过和其他字符串连接 来创建一个新的字符串。‘My name is Alan,’ + ‘ I concatenate.’ 你可以通过在字符串变量或字符串后面写上 .length 来获得字符串变量 字符串 值的长度。“Alan Peter”.length; // 10 []叫中括号，{}叫大括号，()叫小括号。 大多数现代编程语言，如JavaScript，不同于人类从1开始计数。它们是从0开始计数，这被称为 基于零 的索引。var firstName = “Charles” 中，你可以使用 firstName[0] 来获得第一个位置上的字符。 Code Output\’ 单引号\” 双引号\ 反斜杠符\n 换行符\r 回车符\t 制表符\b 退格符\f 换页符 使用 数组，我们可以在一个地方存储多个数据。你以左方括号[开始定义一个数组，以右方括号]结束定义，并把每个条目之间用逗号隔开，就像这样：var sandwich = [“peanut butter”, “jelly”, “bread”] .unshift() 函数用起来就像 .push() 函数一样, 但不是在数组的末尾添加元素，而是在数组的头部添加元素。 function myFunction(){console.log(“Hi World”);}myFunction(); 在 JavaScript 中， 作用域 涉及到变量的作用范围。在函数外定义的变量具有 全局 作用域。这意味着，具有全局作用域的变量可以在代码的任何地方被调用。 这些没有使用var关键字定义的变量，会被自动创建在全局作用域中，形成全局变量。当在代码其他地方无意间定义了一个变量，刚好变量名与全局变量相同，这时会产生意想不到的后果。因此你应该总是使用var关键字来声明你的变量。 在计算机科学中 队列（queue）是一个抽象的数据结构，队列中的条目都是有秩序的。新的条目会被加到 队列 的末尾，旧的条目会从 队列 的头部被移出。写一个函数 queue ，用一个数组arr和一个数字item作为参数。数字item添加到数组的结尾，然后移出数组的第一个元素，最后队列函数应该返回被删除的元素。 array：pop() 删除并返回数组的最后一个元素push() 向数组的末尾添加一个或更多元素，并返回新的长度。 shift() 删除并返回数组的第一个元素unshift() 向数组的开头添加一个或更多元素，并返回新的长度。 Boolean 值绝不会写作被引号包裹起来的形式。字符串 的 “true” 和 “false” 不是 布尔值，在 JavaScript 中也没有特殊含义。 全等（===）是相对于相等操作符（==）的一种操作符。与相等操作符不同的是全等比较严格，它会同时比较元素的值和 数据类型。 不全等运算符（!==）与全等运算符是相反的。这意味着“不全等”并返回 false 的地方，用全等运算会返回 true，反之亦然。全等运算符不会转换值的数据类型。 有时你需要在一次判断中做多个操作。当且仅当运算符的左边和右边都是 true，逻辑与 运算符（&amp;&amp;）才会返回 true。 如果你有非常多的选项需要选择，可以使用switch语句。根据不同的参数值会匹配上不同的case分支，语句会从第一个匹配的case分支开始执行，直到碰到break就结束。 switch (val){case 1:answer = “alpha”;break;case 2:answer = “beta”;break;case 3:answer = “gamma”;break;case 4:answer = “delta”;break;} 如果switch语句中的case分支的break 语句漏掉了，后面的 case语句会一直执行直到遇到break。如果你有多个输入值和输出值一样，可以试试下面的switch语句： switch(val) {case 1:case 2:case 3:result = “1, 2, or 3”;break;case 4:result = “4 alone”;}分支1、2、3将会产生相同的输出结果。 当代码执行到return语句时，函数返回一个结果就结束运行了，return后面的语句根本不会执行。 你之前可能听说过对象 object 。对象和数组很相似，数组是通过索引来访问和修改数据，对象是通过属性来访问和修改数据的。 这是一个示例对象： var cat = {“name”: “Whiskers”,“legs”: 4,“tails”: 1,“enemies”: [“Water”, “Dogs”]};对象适合用来存储结构化数据，就和真实世界的对象一模一样，比如一只猫。 有两种方式访问对象属性，一个是点操作符(.)，一个是中括号操作符([])。 当你知道属性的名称的时候，使用点操作符。 这是一个使用点操作符读取对象属性的例子： var myObj = {prop1: “val1”,prop2: “val2”};var prop1val = myObj.prop1; // val1var prop2val = myObj.prop2; // val2 我们同样可以删除对象的属性，例如：delete ourDog.bark; 对象和字典一样，可以用来存储键/值对。如果你的数据跟对象一样，你可以用对象来查找你想要的值，而不是使用switch或if/else语句。当你知道你的输入数据在某个范围时，这种查找方式极为有效。 这是简单的反向字母表： var alpha = {1:”Z”,2:”Y”,3:”X”,4:”W”,…24:”C”,25:”B”,26:”A”};alpha[2]; // “Y”alpha[24]; // “C” var value = 2;alpha[value]; // “Y” 有时检查一个对象属性是否存在是非常有用的，我们可以用.hasOwnProperty(propname)方法来检查对象是否有该属性。如果有返回true，反之返回 false。 var myObj = {top: “hat”,bottom: “pants”};myObj.hasOwnProperty(“top”); // truemyObj.hasOwnProperty(“middle”); // false JavaScript Object Notation 简称 JSON，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 数据结构 是 字符串，数字，布尔值，字符串，和 对象 的任意组合。 这里是一个JSON对象的示例： var ourMusic = [{“artist”: “Daft Punk”,“title”: “Homework”,“release_year”: 1997,“formats”: [“CD”,“Cassette”,“LP” ],“gold”: true}];这是一个对象数组，并且对象有各种关于专辑的 详细信息。它也有一个嵌套的 formarts 的数组。附加专辑记录可以被添加到数组的最上层。 提示数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。]]></content>
+      <tags>
+        <tag>网站开发</tag>
       </tags>
   </entry>
 </search>
